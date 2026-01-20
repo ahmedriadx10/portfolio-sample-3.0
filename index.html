@@ -1,20 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio 3.0</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 3.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#0B0B0F] scroll-smooth">
+    <!-- header area -->
+    <header class="w-[95%] mx-auto lg:max-w-[1200px]">
+      <!-- navigation menu -->
 
-  <!-- header area -->
-  <header></header>
+      <nav class="flex justify-center items-center py-4 md:justify-end md:py-8">
+        <ul class="flex gap-10">
+          <li><a class="font-medium text-white" href="#about">About</a></li>
+          <li><a class="font-medium text-white" href="#work">Work</a></li>
+          <li><a class="font-medium text-white" href="#">Portfolio</a></li>
+          <li><a class="font-medium text-white" href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-  <!-- main content -->
-  <main></main>
+      <!-- banner area -->
 
-  <!-- footer area -->
-  <footer></footer>
-</body>
+      <section
+        class="flex flex-col mt-10 lg:flex-row lg:justify-between lg:items-center lg:mt-15"
+      >
+        <!-- hero intro -->
+
+        <div class="flex flex-col gap-4 max-w-[500px]">
+          <h2 class="text-[40px] font-semibold text-[#363958] md:text-[60px]">
+            Hello,I'm
+          </h2>
+          <span class="text-[40px] font-bold text-[#FF8367] md:text-[60px]"
+            >Rob Davidson</span
+          >
+          <p class="text-[#ddd] leading-6 max-w-[300px] md:max-w-full">
+            A full stack allaround designer that placerat in massa consectetur
+          </p>
+
+          <!-- hero btn area -->
+
+          <div class="">
+            <button
+              class="bg-linear-to-r from-[#FF8063] to-[#F46060] py-4 px-12 cursor-pointer font-semibold rounded-md text-white"
+            >
+              Hire Me
+            </button>
+          </div>
+        </div>
+
+        <!-- hero img container -->
+        <div class="relative max-w-[500px] mx-auto">
+          <img
+            src="images/do not use this pic.png"
+            alt=""
+            class="max-w-[90%] block mx-auto"
+          />
+        </div>
+      </section>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- about section -->
+      <section
+        class="flex flex-col w-[95%] lg:flex-row lg:justify-between lg:items-center lg:max-w-[1200px] mx-auto"
+        id="about"
+      >
+        <!-- about image area -->
+
+        <div class="max-w-[500px] mx-auto">
+          <img src="./images/do not use this pic2.png" alt="" />
+        </div>
+
+        <!-- about info -->
+
+        <div class="flex flex-col gap-5 max-w-[500px]">
+          <h3
+            class="font-bold text-[#363950] text-[28px] md:text-[38px] lg:text-[48px]"
+          >
+            About
+          </h3>
+          <p class="text-[#ddd] leading-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+
+          <div class="about_btn_area">
+            <button
+              class="bg-linear-to-r from-[#FF8063] to-[#F46060] py-4 px-12 cursor-pointer rounded-md font-semibold flex items-center gap-2 text-white"
+            >
+              <i class="fa-solid fa-download"></i> Download CV
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- latest working project -->
+
+      <section class="py-[60px] lg:py-[150px]" id="work">
+        <!-- working project title -->
+        <div class="mx-auto text-center">
+          <h4
+            class="text-[#363958] font-bold text-3xl uppercase md:text-4xl lg:text-5xl"
+          >
+            <span class="text-[#F46060]">Latest</span> working project
+          </h4>
+        </div>
+
+        <!-- working project main conainer -->
+        <div
+          class="w-[95%] grid gap-8 grid-cols-1 mx-auto my-14 md:grid-cols-2 lg:max-w-[1200px] lg:grid-cols-3"
+        >
+          <!-- project preview card -->
+
+          <div
+            class="shadow-[0_0_10px_#ddd] p-4 rounded-lg bg-[#ffffff33] backdrop-blur-xl"
+          >
+            <img src="./images/image 4.png" alt="" />
+
+            <h6 class="text-2xl my-[15px]">Power-x-gym (gym website)</h6>
+            <p class="text-[#ddd]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div
+            class="shadow-[0_0_10px_#ddd] p-4 rounded-lg bg-[#ffffff33] backdrop-blur-xl"
+          >
+            <img src="./images/image 5.png" alt="" />
+
+            <h6 class="text-2xl my-[15px]">Creative Agency</h6>
+            <p class="text-[#ddd]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div
+            class="shadow-[0_0_10px_#ddd] p-4 rounded-lg bg-[#ffffff33] backdrop-blur-xl"
+          >
+            <img src="./images/image 8.png" alt="" />
+
+            <h6 class="text-2xl my-[15px]">Hard Rock Music</h6>
+            <p class="text-[#ddd]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- work inquiry-->
+
+      <section class="py-[60px] md:py-20 lg:py-[120px] ">
+
+        <!-- inquiry main container -->
+<div class="w-[94%] mx-auto flex flex-col gap-10 rounded-2xl  md:rounded-[30px] bg-[url(images/shapes/Group_33094_1.png)] bg-no-repeat bg-size-[100%_100%] bg-center md:flex-row md:items-center md:py-[88px] px-[74px]  md:justify-between lg:max-w-[1200px]">
+<h5 class="text-white text-[40px] md:text-[60px] lg:text-[64px] font-bold uppercase">Work inquiry</h5>
+
+<div class="text-center my-2.5">
+  <button class="py-[18px] px-8 rounded-md bg-linear-to-r from-[#FF8063] to-[#F46060] text-white font-semibold">Let's Chat</button>
+</div>
+
+</div>
+
+      </section>
+
+    </main>
+
+    <!-- footer area -->
+    <footer class="py-5 md:py-10 lg:py-[60px]">
+
+      <!-- footer items -->
+
+      <div class="w-95% flex flex-col justify-center lg:max-w-[500px] mx-auto text-center  ">
+
+<p class="text-gray-800 uppercase text-[18px] md:text-[24px] ">Stay Connected</p>
+<h6 class="text-white text-[25px] md:text-[36px] my-4 ">hellodesign.com</h6>
+
+<!-- icons area -->
+<div class="flex gap-6 justify-center ">
+  <img class="w-10" src="./images/icons/image 6.png" alt="">
+  <img class="w-10" src="./images/icons/Group 33059.png" alt="">
+  <img class="w-10" src="./images/icons/image 7.png" alt="">
+</div>
+
+      </div>
+
+    </footer>
+  </body>
 </html>
